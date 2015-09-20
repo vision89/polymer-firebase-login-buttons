@@ -2,20 +2,30 @@
   "name": "polymer-firebase-login-buttons",
   "version": "0.0.1",
   "authors": [
-    "Anonymous <anonymous@example.com>"
+    "Dustin Gulley dlgulley411@gmail.com"
   ],
-  "description": "An element providing a solution to no problem in particular.",
+  "description": "A polymer element that provides firebase auth and login buttons for facebook, google, and twitter",
   "keywords": [
-    "web-component",
     "polymer",
-    "seed"
+    "firebase",
+    "login",
+    "sign",
+    "in",
+    "facebook",
+    "twitter",
+    "google"
   ],
-  "main": "polymer-firebase-login-buttons.html",
-  "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "main": "google-login-button.html",
+  "license": "LICENSE.txt",
+  "homepage": "https://github.com/vision89/polymer-firebase-login-buttons",
   "ignore": [
     "/.*",
-    "/test/"
+    "/test/",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
   ],
   "dependencies": {
     "firebase-element": "GoogleWebComponents/firebase-element#~1.0.6",
