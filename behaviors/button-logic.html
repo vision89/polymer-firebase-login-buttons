@@ -1,0 +1,44 @@
+<script>
+	var LoginButtonBehaviors = LoginButtonBehaviors || {};
+    LoginButtonBehaviors.ButtonLogicBehavior = {
+
+      properties: {
+        
+        user: {
+
+	        type: Object,
+	        notify: true,
+	        reflectToAttribute: true
+
+	    },
+
+	    firebaseUrl: {
+
+	        type: String,
+	        notify: false,
+	        value: ''
+
+	    }
+        
+      },
+
+      /**
+      * Login button clicked
+      * @return {[type]} [description]
+      */
+      loginClicked: function () {
+
+        if ( !this.user ) {
+
+          this.$.firebaseLogin.login();
+
+        } else {
+
+          this.$.firebaseLogin.logout();
+
+        }
+
+      },
+
+    };
+</script>
