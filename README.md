@@ -11,7 +11,7 @@ An element that includes a styled button and allows logging in through google, f
 
 		<div>
         
-        <firebase-google-login-button  firebase-url="fb-google-login-app.firebaseIO.com" user="{{user}}"
+        <firebase-google-login-button  firebase-url="<Your-App-Name>.firebaseIO.com" user="{{user}}"
           on-google-logged-in="googleLoggedIn" on-google-logged-out="googleLoggedOut"></firebase-google-login-button>
 
       </div>
@@ -20,7 +20,7 @@ An element that includes a styled button and allows logging in through google, f
 
       <div>
         
-        <firebase-facebook-login-button firebase-url="fb-fbook-login-app.firebaseIO.com" user="{{user}}"
+        <firebase-facebook-login-button firebase-url="<Your-App-Name>.firebaseIO.com" user="{{user}}"
           on-facebook-logged-in="facebookLoggedIn" on-facebook-logged-out="facebookLoggedOut"></firebase-facebook-login-button>
 
       </div>
@@ -29,7 +29,7 @@ An element that includes a styled button and allows logging in through google, f
 
       <div>
         
-        <firebase-twitter-login-button firebase-url="fb-twitter-login-app.firebaseIO.com" user="{{user}}"
+        <firebase-twitter-login-button firebase-url="<Your-App-Name>.firebaseIO.com" user="{{user}}"
           on-facebook-logged-in="twitterLoggedIn" on-facebook-logged-out="twitterLoggedOut"></firebase-twitter-login-button>
 
       </div>
