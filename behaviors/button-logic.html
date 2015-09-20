@@ -10,15 +10,24 @@
 	        notify: true,
 	        reflectToAttribute: true
 
-	    },
+  	    },
 
-	    firebaseUrl: {
+  	    firebaseUrl: {
 
-	        type: String,
-	        notify: false,
-	        value: ''
+  	        type: String,
+  	        notify: false,
+  	        value: ''
 
-	    }
+  	    },
+
+        autoClick: {
+
+          type: Boolean,
+          notify: false,
+          value: false,
+          observer: '_autoClick'
+
+        }
         
       },
 
@@ -39,6 +48,20 @@
         }
 
       },
+
+      /**
+       * Programmatically clicks the login buttton
+       * @return {[type]} [description]
+       */
+      _autoClick: function () {
+
+        if ( this.autoClick === true ) {
+
+          this.loginClicked();
+
+        }
+
+      }
 
     };
 </script>
