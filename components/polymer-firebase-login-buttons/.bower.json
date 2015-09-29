@@ -1,0 +1,48 @@
+{
+  "name": "polymer-firebase-login-buttons",
+  "authors": [
+    "Dustin Gulley dlgulley411@gmail.com"
+  ],
+  "description": "A polymer element that provides firebase auth and login buttons for facebook, google, and twitter",
+  "keywords": [
+    "polymer",
+    "firebase",
+    "login",
+    "sign",
+    "in",
+    "facebook",
+    "twitter",
+    "google"
+  ],
+  "main": "google-login-button.html",
+  "license": "LICENSE.txt",
+  "homepage": "https://github.com/vision89/polymer-firebase-login-buttons",
+  "ignore": [
+    "/.*",
+    "/test/",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase-element": "GoogleWebComponents/firebase-element#~1.0.6",
+    "paper-button": "PolymerElements/paper-button#~1.0.4",
+    "polymer": "Polymer/polymer#^1.1.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
+  },
+  "_release": "5cbc570fef",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "5cbc570fef899bd3784a37c5126c8f75055baf8c"
+  },
+  "_source": "git://github.com/vision89/polymer-firebase-login-buttons.git",
+  "_target": "master",
+  "_originalSource": "vision89/polymer-firebase-login-buttons",
+  "_direct": true
+}
