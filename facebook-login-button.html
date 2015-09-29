@@ -36,7 +36,7 @@ Example:
   
     </style>
 
-    <firebase-auth id="firebaseLogin" location="[[firebaseUrl]]" provider="facebook" user="{{user}}" on-login="loggedIn" on-logout="loggedOut"></firebase-auth>
+    <firebase-auth id="firebaseLogin" location="[[firebaseUrl]]" provider="facebook" user="{{user}}" on-login="_loggedIn" on-logout="_loggedOut"></firebase-auth>
 
     <facebook-login-button on-facebook-button-clicked="loginClicked" signed-in="[[user]]"></facebook-login-button>
 
@@ -55,7 +55,7 @@ Example:
      * Fires after seccesful google login
      * @return {[type]} [description]
      */
-    loggedIn: function () {
+    _loggedIn: function () {
 
       this.fire( 'facebook-logged-in' );
 
@@ -65,7 +65,7 @@ Example:
      * Fires after succesful google logout
      * @return {[type]} [description]
      */
-    loggedOut: function () {
+    _loggedOut: function () {
 
       this.fire( 'facebook-logged-out' );
 

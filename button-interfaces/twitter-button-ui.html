@@ -80,13 +80,13 @@ Example:
 
      <span hidden$="{{signedIn}}">
 
-      <paper-button class="twitter-signin" on-click="clickHandler" ></paper-button>
+      <paper-button class="twitter-signin" on-click="_clickHandler" ></paper-button>
 
     </span>  
 
      <span hidden$="{{!signedIn}}">
 
-      <paper-button raised class="signout" on-click="clickHandler">Sign Out</paper-button>
+      <paper-button raised class="signout" on-click="_clickHandler">Sign Out</paper-button>
 
      </span>
 
@@ -101,7 +101,7 @@ Example:
     is: 'twitter-login-button',
     behaviors: [LoginButtonBehaviors.ButtonInterfaceBehavior],
 
-      clickHandler: function () {
+      _clickHandler: function () {
 
         this.fire( 'twitter-button-clicked', { 'signedIn': !this.signedIn } );
 

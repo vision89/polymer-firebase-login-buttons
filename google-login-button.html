@@ -13,11 +13,34 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="behaviors/button-logic.html">
 
 <!--
-An element providing a solution to no problem in particular.
+An element that allows you to log in with facebook, google and twitter
 
 Example:
 
-    <firebase-google-login-button></firebase-google-login-button>
+    <div>
+        
+        <firebase-google-login-button  firebase-url="<Your-App-Name>.firebaseIO.com" user="{{user}}"
+          on-google-logged-in="googleLoggedIn" on-google-logged-out="googleLoggedOut"></firebase-google-login-button>
+
+      </div>
+
+      <br />
+
+      <div>
+        
+        <firebase-facebook-login-button firebase-url="<Your-App-Name>.firebaseIO.com" user="{{user}}"
+          on-facebook-logged-in="facebookLoggedIn" on-facebook-logged-out="facebookLoggedOut"></firebase-facebook-login-button>
+
+      </div>
+
+      <br />
+
+      <div>
+        
+        <firebase-twitter-login-button firebase-url="<Your-App-Name>.firebaseIO.com" user="{{user}}"
+          on-facebook-logged-in="twitterLoggedIn" on-facebook-logged-out="twitterLoggedOut"></firebase-twitter-login-button>
+
+      </div>
 
 @group Seed Elements
 @element firebase-google-login-button
@@ -36,7 +59,7 @@ Example:
   
     </style>
 
-    <firebase-auth id="firebaseLogin" location="[[firebaseUrl]]" provider="google" user="{{user}}" on-login="loggedIn" on-logout="loggedOut"></firebase-auth>
+    <firebase-auth id="firebaseLogin" location="[[firebaseUrl]]" provider="google" user="{{user}}" on-login="_loggedIn" on-logout="_loggedOut"></firebase-auth>
     
     <google-signin-button on-google-button-clicked="loginClicked" signed-in="[[user]]"></google-signin-button>
 
@@ -55,7 +78,7 @@ Example:
      * Fires after seccesful google login
      * @return {[type]} [description]
      */
-    loggedIn: function () {
+    _loggedIn: function () {
 
       this.fire( 'google-logged-in' );
 
@@ -65,7 +88,7 @@ Example:
      * Fires after succesful google logout
      * @return {[type]} [description]
      */
-    loggedOut: function () {
+    _loggedOut: function () {
 
       this.fire( 'google-logged-out' );
 

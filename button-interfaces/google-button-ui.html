@@ -96,13 +96,13 @@ Example:
 
    <span hidden$="{{signedIn}}">
 
-    <paper-button class="google-signin" on-click="clickHandler" ></paper-button>
+    <paper-button class="google-signin" on-click="_clickHandler" ></paper-button>
 
   </span>  
 
    <span hidden$="{{!signedIn}}">
 
-    <paper-button raised class="signout" on-click="clickHandler">Sign Out</paper-button>
+    <paper-button raised class="signout" on-click="_clickHandler">Sign Out</paper-button>
 
    </span>
 
@@ -118,7 +118,7 @@ Example:
     is: 'google-signin-button',
     behaviors: [LoginButtonBehaviors.ButtonInterfaceBehavior], 
 
-    clickHandler: function () {
+    _clickHandler: function () {
 
       this.fire( 'google-button-clicked', { 'signedIn': !this.signedIn } );
 

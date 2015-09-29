@@ -5,7 +5,7 @@ An element that includes a styled button and allows logging in through google, f
 
 ## Install
 
-		bower install polymer-firebase-login-buttons --save
+		bower install vision89/polymer-firebase-login-buttons --save
 
 ## Examples
 
