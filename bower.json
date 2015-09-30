@@ -1,6 +1,6 @@
 {
   "name": "polymer-firebase-login-buttons",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "authors": [
     "Dustin Gulley dlgulley411@gmail.com"
   ],
@@ -13,7 +13,8 @@
     "in",
     "facebook",
     "twitter",
-    "google"
+    "google",
+    "web-components"
   ],
   "main": "google-login-button.html",
   "license": "LICENSE.txt",
